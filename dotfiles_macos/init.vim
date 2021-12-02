@@ -53,6 +53,29 @@ call plug#begin("~/.nvim/plugged")
  Plug '907th/vim-auto-save'
  Plug 'w0rp/ale'
 
+" go
+"" Go Lang Bundle
+Plug 'fatih/vim-go', {'do': ':GoInstallBinaries'}
+
+
+" html
+"" HTML Bundle
+Plug 'hail2u/vim-css3-syntax'
+Plug 'gorodinskiy/vim-coloresque'
+Plug 'tpope/vim-haml'
+Plug 'mattn/emmet-vim'
+
+
+" javascript
+"" Javascript Bundle
+Plug 'jelera/vim-javascript-syntax'
+
+
+" python
+"" Python Bundle
+Plug 'davidhalter/jedi-vim'
+Plug 'raimon49/requirements.txt.vim', {'for': 'requirements'}
+
 call plug#end()
 
 " color schemes
