@@ -39,3 +39,9 @@ keymap.set('n', 'ff', ':Telescope find_files<Return>')
 keymap.set('n', 'fg', ':Telescope live_grep<Return>')
 keymap.set('n', 'fb', ':Telescope file_browser<Return>')
 keymap.set('n', 'fh', ':Telescope help_tags<Return>')
+
+-- NvimTree
+keymap.set('n', 'tt', ':NvimTreeToggle<Return>')
+keymap.set('n', 'tf', ':NvimTreeFocus<Return>')
+keymap.set('n', 'tff', ':NvimTreeFindFile<Return>')
+keymap.set('n', 'tc', ':NvimTreeCollapse<Return>')
