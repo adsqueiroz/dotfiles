@@ -1,17 +1,16 @@
-require('base')
-require('highlights')
-require('maps')
-require('plugins')
-
-local has = function(x)
-  return vim.fn.has(x) == 1
-end
-local is_mac = has "macunix"
-local is_win = has "win32"
-
-if is_mac then
-  require('macos')
-end
-if is_win then
-  require('windows')
-end
+require("base.plugins-setup")
+require("base.core.options")
+require("base.core.keymaps")
+require("base.core.colorscheme")
+require("base.plugins.comment")
+require("base.plugins.nvim-tree")
+require("base.plugins.lualine")
+require("base.plugins.telescope")
+require("base.plugins.nvim-cmp")
+require("base.plugins.lsp.mason")
+require("base.plugins.lsp.lspsaga")
+require("base.plugins.lsp.lspconfig")
+require("base.plugins.lsp.null-ls")
+require("base.plugins.autopairs")
+require("base.plugins.treesitter")
+require("base.plugins.gitsigns")
