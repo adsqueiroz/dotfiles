@@ -1,0 +1,105 @@
+custom-shader = shaders/cursor_smear.glsl
+#custom-shader = shaders/retro-terminal.glsl
+#custom-shader = shaders/glitchy.glsl
+#custom-shader = shaders/fireworks.glsl
+
+# Main font to be used (INPUT)
+font-family = "JetBrainsMono NFM Thin"
+font-style = "italic"
+font-size = 12
+
+#font-family = Hack Nerd Font
+#font-size = 12
+theme = Gruvbox Dark Hard
+background-opacity = 0.92
+foreground = #ebdbb2
+background = #1d2021
+cursor-color = #fabd2f
+selection-background = #504945
+selection-foreground = #ebdbb2
+
+
+# Neon vibes
+palette = 0=#282828
+palette = 1=#fb4934
+palette = 2=#b8bb26
+palette = 3=#fabd2f
+palette = 4=#83a598
+palette = 5=#d3869b
+palette = 6=#8ec07c
+palette = 7=#ebdbb2
+palette = 8=#665c54
+palette = 9=#fb4934
+palette = 10=#b8bb26
+palette = 11=#fabd2f
+palette = 12=#83a598
+palette = 13=#d3869b
+palette = 14=#8ec07c
+palette = 15=#fbf1c7
+
+#theme = ayu
+#theme = Builtin Dark
+#theme = iTerm2 Default
+shell-integration-features = no-cursor,sudo,no-title
+cursor-style = underline
+cursor-color = #ff0001
+cursor-text =  #ff0001
+adjust-cell-height = 35%
+
+unfocused-split-opacity = 0.40
+
+auto-update = check
+auto-update-channel = stable
+
+mouse-hide-while-typing = true
+mouse-scroll-multiplier = 2
+
+window-padding-balance = true
+window-save-state = always
+#macos-titlebar-style = transparent 
+macos-titlebar-style = tabs
+window-decoration = true
+window-colorspace = "display-p3"
+window-theme = ghostty
+adw-toolbar-style = flat
+
+# keybindings
+keybind = cmd+s>r=reload_config
+keybind = cmd+s>x=close_surface
+
+keybind = cmd+s>n=new_window
+
+# tabs
+keybind = cmd+s>c=new_tab
+keybind = cmd+s>shift+l=next_tab
+keybind = cmd+s>shift+h=previous_tab
+keybind = cmd+s>comma=move_tab:-1
+keybind = cmd+s>period=move_tab:1
+
+# quick tab switch
+keybind = cmd+s>1=goto_tab:1
+keybind = cmd+s>2=goto_tab:2
+keybind = cmd+s>3=goto_tab:3
+keybind = cmd+s>4=goto_tab:4
+keybind = cmd+s>5=goto_tab:5
+keybind = cmd+s>6=goto_tab:6
+keybind = cmd+s>7=goto_tab:7
+keybind = cmd+s>8=goto_tab:8
+keybind = cmd+s>9=goto_tab:9
+
+# split
+keybind = cmd+s>\=new_split:right
+keybind = cmd+s>-=new_split:down
+
+keybind = cmd+s>j=goto_split:bottom
+keybind = cmd+s>k=goto_split:top
+keybind = cmd+s>h=goto_split:left
+keybind = cmd+s>l=goto_split:right
+
+keybind = cmd+s>z=toggle_split_zoom
+
+keybind = cmd+s>e=equalize_splits
+
+# other
+copy-on-select = clipboard
+keybind = shift+enter=text:\x1b\r
